@@ -1,8 +1,6 @@
-# 🧩 LeetCode 175. Combine Two Tables
+# LeetCode 175: Combine Two Tables
 
-### 📄 Problem Description
-
-**Table: Person**
+## Table: Person
 
 | Column Name | Type    |
 |--------------|---------|
@@ -10,11 +8,11 @@
 | FirstName    | varchar |
 | LastName     | varchar |
 
-➡️ `PersonId` is the **primary key** column for this table.
+PersonId is the primary key column for this table.
 
 ---
 
-**Table: Address**
+## Table: Address
 
 | Column Name | Type    |
 |--------------|---------|
@@ -23,20 +21,22 @@
 | City         | varchar |
 | State        | varchar |
 
-➡️ `AddressId` is the **primary key** column for this table.
+AddressId is the primary key column for this table.
 
 ---
 
-### 🎯 Problem Statement
-Write an SQL query that provides the following information for **each person** in the `Person` table,  
-**regardless of whether** there is an address for them in the `Address` table.
+## Problem Statement
 
-Return:  
+Write an SQL query to report the following information for each person in the `Person` table,  
+regardless of whether there is an address for each of those people.
+
+**Required columns:**  
 `FirstName`, `LastName`, `City`, `State`
 
 ---
 
-### ✅ Solution
+## SQL Solution
+
 ```sql
 SELECT
   p.FirstName,
